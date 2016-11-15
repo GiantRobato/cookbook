@@ -17,6 +17,7 @@ SRCS= main.c
 OBJS=$(SRCS:.c=.o)
 
 all: $(TARGET)
+	@if [ -d "bin" ]; then echo "bin exists"; else mkdir bin; fi
 	mv $(TARGET) bin
 	@echo "Finished Compiling"
 
