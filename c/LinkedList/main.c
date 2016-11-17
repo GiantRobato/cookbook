@@ -27,7 +27,7 @@ int main(int argc, char* argv[]){
 	head = tmp;
 
 	int i;
-	for(i = 0; i < 10; i++){
+	for(i = 1; i < 10; i++){
 		prev = tmp;
 
 		tmp = (node *) malloc(sizeof(node));
